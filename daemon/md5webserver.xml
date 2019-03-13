@@ -1,0 +1,25 @@
+<service>
+	<id>md5webserver.exe</id>
+	<name>MD5 Web Server</name>
+	<description>Runs the MD5 NodeJS Web Server.</description>
+	<executable>C:\Program Files\nodejs\node.exe</executable>
+	<logmode>rotate</logmode>
+	<argument>--harmony</argument>
+	<argument>C:\nodejs\node_modules\node-windows\lib\wrapper.js</argument>
+	<argument>--file</argument>
+	<argument>C:\nodejs\md5Server.js</argument>
+	<argument>--log</argument>
+	<argument>MD5 Web Server wrapper</argument>
+	<argument>--grow</argument>
+	<argument>0.25</argument>
+	<argument>--wait</argument>
+	<argument>1</argument>
+	<argument>--maxrestarts</argument>
+	<argument>3</argument>
+	<argument>--abortonerror</argument>
+	<argument>n</argument>
+	<argument>--stopparentfirst</argument>
+	<argument>undefined</argument>
+	<stoptimeout>30sec</stoptimeout>
+	<workingdirectory>C:\nodejs</workingdirectory>
+</service>
